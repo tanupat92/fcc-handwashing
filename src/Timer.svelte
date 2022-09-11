@@ -1,7 +1,7 @@
 <script>
     import {createEventDispatcher} from "svelte"; 
     import ProgressBar from "./ProgressBar.svelte";
-    const TOTALSECONDS = 3;
+    const TOTALSECONDS = 20;
     let secondLeft = TOTALSECONDS; 
     let isRunning = false;
     $: progress = 100*(TOTALSECONDS - secondLeft)/ TOTALSECONDS
